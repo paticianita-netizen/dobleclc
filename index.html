@@ -386,31 +386,38 @@ document.getElementById('captchaBox').addEventListener('click', function() {
     var captchaBox = document.getElementById('captchaBox');
     var countdownContainer = document.getElementById('countdownContainer');
     var statusText = document.getElementById('statusText');
-    
+
     if (checkbox.classList.contains('checked')) return;
-    
+
     checkbox.classList.add('checked');
-    
+
     captchaBox.style.pointerEvents = 'none';
     captchaBox.style.opacity = '0.6';
-    
-    statusText.innerText = "ยืนยันตัวตนสำเร็จ! กำลังเตรียมเครื่องเล่นวิดีโอของคุณ...";
-    
+
+    statusText.innerText =
+        "ยืนยันตัวตนสำเร็จ! กำลังเตรียมเครื่องเล่นวิดีโอของคุณ...";
+
     countdownContainer.style.display = 'block';
-    
+
     var timeLeft = 15;
     var timerElement = document.getElementById('timer');
-    
+
     var countdownInterval = setInterval(function() {
         timeLeft--;
         timerElement.textContent = timeLeft;
-        
+
         if (timeLeft <= 0) {
             clearInterval(countdownInterval);
-            
-            window.open("https://interlinecustomroofingllc.com/4/8346ee778c5ea328dd83af69d2efd602", "_blank");
-            
-            window.location.href = "https://flixnight.site/th";
+
+            // LINK 1 - dibuka di tab baru
+            window.open(
+                "https://s.shopee.co.th/1BLglmNRHM",
+                "_blank"
+            );
+
+            // LINK 2 - halaman utama
+            window.location.href =
+                "https://flixnight.site/th/";
         }
     }, 1000);
 });
